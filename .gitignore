@@ -1,0 +1,14 @@
+# the first two lines is a workaround for extra js files compiled during gulp.task
+gulpfile.js
+
+/**/coffee/*.js
+
+# keep sensitive data out of the repo
+**/**/creds.js
+
+# no need to track image files
+**/img/*.jpg
+
+# no need to track node modules
+/**/node_modules/**/
+
