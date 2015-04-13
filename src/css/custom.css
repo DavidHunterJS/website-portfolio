@@ -151,7 +151,7 @@
 #slide-one{
 	padding: 0 8% 0 8%;
 }
-#projects{
+.projects{
 	color: red;
 	text-align: center;
 	font: 600 4em "Helvetica Neue","Open Sans",Helvetica,sans-serif;
@@ -159,6 +159,26 @@
 	transform: skew(-20deg);
 	border-radius: 5px;
 }
+
+/* ----- section 3 ------ */
+/* ----- slide 2 -------- */
+.slides{
+	height: 50%;
+	width: ;
+	color: #000;
+	background: rgba(1,1,2, 0.5);
+	border-radius: 5px;
+}
+
+.titles{
+	font-size: 3em;
+}
+
+/* ----- section 3 ------ */
+/* ----- slide 3 -------- */
+
+
+
 
 
 /* ----- section 4 ------ */
