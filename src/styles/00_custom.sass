@@ -1,1 +1,22 @@
-/ this is from the SASS file
+// this is from the SASS file 
+
+// background images 
+
+@mixin bg-image($bgurl){
+	background-image: url($bgurl);
+	background-size: cover;
+	background-position: center center; 
+	background-repeat:no-repeat;
+}
+#s1{
+	@include bg-image('../img/bg1.jpg')
+}
+#s2{
+	@include bg-image('../img/bg2.jpg')
+}
+#s3{
+	@include bg-image('../img/bg3.jpg')
+}
+#s4{
+	@include bg-image('../img/bg4.jpg')
+}

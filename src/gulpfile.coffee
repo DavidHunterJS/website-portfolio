@@ -6,6 +6,7 @@ do ->
   plumber    = require 'gulp-plumber'
   connect    = require 'gulp-connect'
   coffee     = require 'gulp-coffee'
+  sass       = require 'gulp-sass'
   concat     = require 'gulp-concat'
   uglify     = require 'gulp-uglify'
   minifyCSS  = require 'gulp-minify-css'
@@ -24,6 +25,7 @@ do ->
   gulp.task 'styles', ->
     gulp.src(['styles/*.sass', 'styles/*.css'])
       .pipe(plumber())
+      .pipe(sass())
       .pipe(concat('style.css'))
       .pipe(gulp.dest('./dev-css'))
       .pipe(minifyCSS()).on('error', gutil.log)
