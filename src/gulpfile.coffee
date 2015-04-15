@@ -22,16 +22,25 @@ do ->
       .pipe(gulp.dest('../dist'))
       .pipe connect.reload()
   
-  gulp.task 'styles', ->
-    gulp.src(['styles/*.sass', 'styles/*.css'])
+  gulp.task 'sass', ->
+    gulp.src('styles/*.sass')
+      .pipe(sass(
+        indentedSyntax: true
+        errLogToConsole: true
+        sourceComments : 'normal'
+      )).on('error', gutil.log)
+      .pipe(gulp.dest('./dev-sass/'))
+      .pipe connect.reload()
+  
+  gulp.task 'css', ->
+    gulp.src([ './dev-sass/*.css', './styles/*.css'])
       .pipe(plumber())
-      .pipe(sass())
-      .pipe(concat('style.css'))
+      .pipe(concat('custom.css'))
       .pipe(gulp.dest('./dev-css'))
       .pipe(minifyCSS()).on('error', gutil.log)
       .pipe(gulp.dest('../dist/css'))
       .pipe connect.reload()
-  
+
   gulp.task 'js', ->
     gulp.src('js/*.js')
       .pipe(plumber())
@@ -51,7 +60,8 @@ do ->
   
   gulp.task 'watch', ->
     gulp.watch [ '*.html' ], [ 'html' ]
-    gulp.watch [ 'styles/*.css', 'styles/*.sass' ], [ 'styles' ]
+    gulp.watch [ 'styles/*.sass' ], [ 'sass' ]
+    gulp.watch [ 'styles/*.css', './dev-sass/*.css'], [ 'css']
     gulp.watch [ 'js/*.js' ], [ 'js' ]
     gulp.watch [ 'coffee/*.coffee' ], [ 'coffeeTask' ]
     return

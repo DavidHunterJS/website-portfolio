@@ -1,3 +1,31 @@
+/* line 6, D:/js practice/a Website/practice-05/src/styles/00_custom.sass */
+#s1 {
+  background-image: url('../img/bg1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+/* line 8, D:/js practice/a Website/practice-05/src/styles/00_custom.sass */
+#s2 {
+  background-image: url('../img/bg2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+/* line 10, D:/js practice/a Website/practice-05/src/styles/00_custom.sass */
+#s3 {
+  background-image: url('../img/bg3.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+/* line 12, D:/js practice/a Website/practice-05/src/styles/00_custom.sass */
+#s4 {
+  background-image: url('../img/bg4.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
 
 /* Navigation Menu */
 
@@ -12,11 +40,11 @@
 #menu li {
 	display:inline-block;
 	margin: -2px;
-	margin-top: 0;
+	margin-top: 0px;
 	color: #000;
 	background:#fff;
 	background: rgba(0, 129, 255, 0.3);
-    border-radius: 0;
+    border-radius: 0px;
 }
 #menu li.active{
 	background: rgba(0,100,255, 0.7);
