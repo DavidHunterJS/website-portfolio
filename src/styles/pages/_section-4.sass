@@ -1,0 +1,38 @@
+//section 4
+
+// 'contact me' text color in jumbotron banner
+.contact-messageArea
+	color: $color-aliceblue
+	// small text in jumbotron banner
+	small 
+		font-size: 24px
+		color: $color-aliceblue
+
+// the form's text inputs background color 
+// since I'm using the generic bootstrap selector .form-control
+// I've added the parent selector as assurance that it would only be used on this page
+#sd4> .form-control
+	background-color: $color-aliceblue
+
+// form input wrapper and banner background
+.contact-color
+	background: $color-transblue
+
+// color for div with globe and contact details
+.contact-deets
+	background: $color-transblue-dark
+	// background color over email address making it easier to read
+	address a
+		background: $color-transblue-darker
+	/* centers and enlarges text in contact details on mobile */
+	+mq($until: tablet)
+		text-align: center
+		font-size: 1.6em
+/* makes message area smaller on mobile */		
+textarea.form-control	
+	+mq($until: tablet)
+		height: 10em
+/* contact info is enlarged on mobile */
+legend
+	+mq($until: tablet)
+		font-size: 1.5em

@@ -1,6 +1,7 @@
 
 /* Navigation Menu */
 
+/*
 #menu li:first-of-type{
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
@@ -9,6 +10,7 @@
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+
 #menu li {
 	display:inline-block;
 	margin: -2px;
@@ -18,31 +20,8 @@
 	background: rgba(0, 129, 255, 0.3);
     border-radius: 0;
 }
-#menu li.active{
-	background: rgba(0,100,255, 0.7);
-	color: #fff;
-}
-#menu li a{
-	text-decoration:none;
-	color: #000;
-}
-#menu li.active a:hover{
-	color: rgba(0,100,255, 0.7);
-}
-#menu li:hover{
-	background: rgba(2,101,255, 0.35);
-}
-#menu li:hover a{
-	color: rgba(0,100,255, 0.7);
-}
-#menu li a,
-#menu li.active a{
-	padding: 1em 3em;
-	display:block;
-}
-#menu li.active a{
-	color: #fff;
-}
+*/
+/*
 #menu{
 	text-align: center;
 	position:fixed;
@@ -54,12 +33,41 @@
 	padding: 0;
 	margin-top:10px;
 }
+
+#menu li:hover{
+	background: rgba(2,101,255, 0.35);
+}
+#menu li:hover a{
+	color: rgba(0,100,255, 0.7);
+}
+
+#menu li.active{
+	background: rgba(0,100,255, 0.7);
+	color: #fff;
+}
+#menu li.active a:hover{
+	color: rgba(0,100,255, 0.7);
+}
+
+#menu li a{
+	text-decoration:none;
+	color: #000;
+	padding: 1em 3em;
+	display:block;
+}
+
+#menu li.active a{
+	padding: 1em 3em;
+	display:block;
+	color: #fff;
+}
+
 .glyphicon{
 	font-size: 1.6em;
 }
 
 
-/* --------- section 1 --------- */
+
 #name1{
 	font:100 4.5em "Abril Fatface", serif;
 	color: white;
@@ -81,13 +89,11 @@
 		text-align: center;
 		letter-spacing: .4em;
 }
-/* transparent background on page one*/
+
 .transbox{
 	margin: 30px;
-	margin-top: 0px;
+	margin-top: 0;
 	padding: 20px;
-	background-color: #ffffff;
-	border: 0px solid black;
 	background: rgba(0, 129, 255, 0.3);
 	border-radius: 10px;
 
@@ -100,24 +106,27 @@
 
 /* ----- section 2 ----- */
 
-/* text background on page two */
+/* text background on page two 
 #about-transbox{
+	margin-top: 20%;
 	padding: 1em;
-	color: #303B62;
 	font:600 1.8em "Helvetica Neue","Open Sans",Helvetica,sans-serif;
 	border-radius: 10px;
-	box-shadow: 0px 0px 65px 1px;
+	color: #303B62;
 	background: rgba(215, 235, 255, 0.5);
-	margin-top: 20%;
+	box-shadow: 0 0 65px 1px;
 }
-/* header and footer for text on page 2*/
+
+/* header and footer for text on page 2
 #about{
 	text-align: center;
 	letter-spacing: 10px;
 }
 
+
+
 /* ----- section 3 ------ */
-/* ----- slide 1 -------- */
+/* ----- slide 1 -------- 
 #slide-one{
 	padding: 0 8% 0 8%;
 }
@@ -131,7 +140,7 @@
 }
 
 /* ----- section 3 ------ */
-/* ----- slide 2 -------- */
+/* ----- slide 2 -------- *
 .slides{
 	height: 50%;
 	color: #000;
@@ -150,7 +159,7 @@
 
 
 
-/* ----- section 4 ------ */
+/* ----- section 4 ------ 
 #s4 > div > div.jumbotron.jumbotron-sm{
 	background: rgba(0, 129, 255, 0.3);
 }
@@ -161,7 +170,7 @@
 	background: rgba(0, 129, 255, 0.3);
 }
 
-/*background color for text inputs for form on page 4*/
+/*background color for text inputs for form on page 4
 .form-control{
 	background-color: aliceblue;
 }
@@ -177,54 +186,4 @@
 .h1 small {
 	font-size: 24px;
 }
-
-/* device specific rules below */
-/* ---------- gereric mobile device ----------- */
-@media only screen and (max-device-width : 480px) {
-
-	/* nav - removes border-radius on mobile */
-	#menu li:first-of-type{
-		border-top-left-radius: 0px;
-		border-bottom-left-radius: 0px;
-	}
-	#menu li:last-of-type{
-		border-top-right-radius: 0px;
-		border-bottom-right-radius: 0px;
-	}
-	/* makes nav bar full width on mobile */
-	#menu li{
-		width: 25%;
-		margin-top: -2%;
-	}
-	/* nav - centers glyphicons in parent el */
-	#menu li a, #menu li.active a{
-		padding: 1em 2em;
-	}
-	/* nav - makes glyphicons bigger for mobile */
-	.glyphicon{
-		font-size: 2em;
-	}
-
-/* section 4*/
-	/* makes message area smaller on mobile */
-	textarea.form-control{
-		height: 10em;
-	}
-	/* centers and enlarges text in contact details on mobile */
-	#deets{
-		text-align: center;
-		font-size: 1.6em;
-	}
-	legend{
-		font-size: 1.5em;
-	}
-}
-
-/* ------ For tablets ----------- */
-@media only screen and (min-device-width: 768px){}
-
-/* Samsung S5 (landscape) ----------- */
-@media only screen and (min-device-width : 360px) and (max-device-width : 640px) and (orientation : landscape){}
-	
-/* iPhone 5 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px){}
+*/
