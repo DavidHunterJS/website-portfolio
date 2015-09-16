@@ -1,8 +1,57 @@
+// BATHROOM CHORE CALENDAR - SECTION 3 SLIDE 2
+
 // section 3 - slide 2
-.slides
-	height: 50%
-	color: $color-black
-	background: rgba(1,1,2, 0.5)
+
+// used to center columns (div.slide-deets)
+.slide div
+		margin: 0 auto
+
+// big blue project name title
+.project-titles
+	margin: 0 22% 0 22%
+	border: 5px solid
 	border-radius: 5px
-.titles
-	font-size: 3em
+	text-align: center
+	color: $color-transblue-light
+	font: 600 4.5rem $Helvetica
+	transform: skew(-20deg)
+
+// main text area
+.project-slides
+	background: rgba(215, 235, 255, 0.5)
+	padding: 1em
+	margin: 4em 0.5em 0 0.5em
+	box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.5);
+	// box-shadow: 4px 0 7px rgba(215, 235, 255, 0.5)
+	border-top-left-radius: 10px
+	border-top-right-radius: 10px
+	color: #5C3B3B
+	+mq($until: tablet)
+		padding: 1em 3em
+
+
+// three columns under the main text area
+
+// all columns
+div.slide-deets
+	padding: 1em
+	margin: 0
+	color: #5C3B3B
+	text-align: center
+	background: rgba(215, 235, 255, 0.5)
+	height: 12em
+
+// first column in row
+div.slide-deets-first
+	box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+	border-bottom-left-radius: 10px
+	+mq($until: tablet)
+		border-radius: 0
+
+// last column in row
+div.slide-deets-last
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	border-bottom-right-radius: 10px
+	+mq($until: tablet)
+		border-bottom-left-radius: 10px
+		border-bottom-right-radius: 10px

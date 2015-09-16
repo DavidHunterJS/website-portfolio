@@ -16,6 +16,7 @@ do ->
   gulp.task 'connect', ->
     connect.server
       root: '../dist'
+      port: 8181
       livereload: true
     return
   

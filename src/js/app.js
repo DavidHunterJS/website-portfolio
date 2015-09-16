@@ -27,15 +27,15 @@ app.post('/myAction', function(req, res) {
 	};
 	// creates an emailjs message using the headers object
 	var message = email.message.create(headers);
-	// sends the emailjs message usig the server created below
+	// sends the message using the server created below
 	server.send(message, function(err, message) {
-		console.log(err || message); // remove this 
+		console.log(err || message); // remove the 'or message' part after it's been verified working>>>>>>
 	});
 	res.end();
 });
 
-// server used to send message using a gmail account
-// sensitive data comes from a required module which I can .gitignore and encrypt on the host server 
+// emailjs server used to send message using my gmail account credentials
+// sensitive data comes from required module 'creds' which I can then .gitignore and encrypt on the host server 
 var server  = email.server.connect({
     user:       creds.usr,
     password:   creds.pwd,

@@ -21,18 +21,18 @@
 // color for div with globe and contact details
 .contact-deets
 	background: $color-transblue-dark
-	// background color over email address making it easier to read
+	// darken color of email address making it easier to read and to match the rest of page
 	address a
-		background: $color-transblue-darker
-	/* centers and enlarges text in contact details on mobile */
+		color: #333
+	// centers and enlarges text in contact details on mobile
 	+mq($until: tablet)
 		text-align: center
 		font-size: 1.6em
-/* makes message area smaller on mobile */		
+// makes message area smaller on mobile		
 textarea.form-control	
 	+mq($until: tablet)
 		height: 10em
-/* contact info is enlarged on mobile */
+// contact info is enlarged on mobile
 legend
 	+mq($until: tablet)
 		font-size: 1.5em

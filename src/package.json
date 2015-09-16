@@ -23,6 +23,6 @@
     "gulp-util": "^3.0.2"
   },
   "dependencies": {
-    "coffee-script": "^1.9.1"
+    "coffee-script": "^1.9.3"
   }
 }

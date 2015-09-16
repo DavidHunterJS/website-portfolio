@@ -8,10 +8,11 @@
           content="width=device-width, maximum-scale=1.0, minimum-scale=0.5, initial-scale=0.5, user-scalable=no">
     
     <title>David Hunter - JavaScript Developer</title>
-    
+    <link rel="shortcut icon" href="/img/2favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.3/jquery.fullPage.min.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -20,27 +21,39 @@
 </head>
 
 <body>
-    <!-- Navigation Menu -->
+    
+    <!-- 
+    ===============
+    NAVIGATION MENU
+    =============== -->
     <ul id="menu" class="nav-menu" >
         <li data-menuanchor="section1" class="nav-li nav-li-first active" id="one">
             <a href="#section1" class="glyphicon glyphicon-home" alt="Home"></a>
         </li>
         <li data-menuanchor="section2" class="nav-li">
-            <a href="#section2" class="glyphicon glyphicon-education" alt="Skills"></a>
+            <a href="#section2" class="glyphicon glyphicon-user" alt="About"></a>
         </li>
         <li data-menuanchor="section3" class="nav-li">
-            <a href="#section3" class="glyphicon glyphicon-wrench" alt="Projects"></a>
+            <a href="#section3" class="glyphicon glyphicon-folder-open" alt="Projects"></a>
         </li>
-        <li data-menuanchor="section4" class="nav-li nav-li-last">
-            <a href="#section4" class="glyphicon glyphicon-envelope" alt="Contact"></a>
+        <li data-menuanchor="section4" class="nav-li">
+            <a href="#section4" class="glyphicon glyphicon-send" alt="Contact"></a>
+        </li>
+        <li data-menuanchor="section5" class="nav-li nav-li-last">
+            <a href="./blog" class="glyphicon glyphicon-new-window" alt="Blog"></a>
         </li>
     </ul>
 
-    <!-- fullpage.js container div -->
+    <!-- 
+    =========================
+    FULLPAGE.JS CONTAINER DIV
+    ========================= -->
     <div id="fullpage">
         
-        <!--  section 1 -->
-        <!-- Home Page -->
+        <!-- 
+        ======================
+        SECTION 1 - HOME PAGE
+        ====================== -->
         <div class="bg-burdell bg-layout section" id="s1">
             <div class="container">
                 <br>
@@ -51,48 +64,50 @@
                 <div class="main-transbox">
                     <p class="main-name">David Hunter</p>
                     <hr>
-                    <p class="main-title main-font">Entry Level</p>
-                    <br>
-                    <p class="main-jscs main-font">JavaScript / CoffeeScript</p>
+
+                    <p class="main-jscs main-font">JavaScript  CoffeeScript</p>
                     <br>
                     <p class="main-title main-font"> Developer</p>
                 </div>
             </div>
         </div>
         
-        <!-- section 2 -->
-        <!-- About Page -->
+        <!-- 
+        ======================
+        SECTION 2 - ABOUT PAGE
+        ====================== -->
         <div class="bg-sf bg-layout section" id="s2">
             <div class="container">
                 <div class="about-transbox main-font about-text">
-                    <p class="about-tag">&#60;About me&#62;</p> <!--  escape chars <> -->
+                    <!--  escape chars <> -->
+                    <p class="about-tag"><strong>&#60;About me&#62;</strong></p> 
                     <p>Based in Marin County California, I'm a self-taught, aspiring JavaScript / CoffeeScript programmer who has a passion for web development and problem solving.</p>
                     <p>When I’m not out on the trails of Marin experiencing all that nature has to offer or kicking butt at Battlefield on the PC, I'm learning things like jQuery's Ajax and Cross-origin resource sharing or MongoDB’s Aggregation operations, just to name a few. </p>
                     <p>These are some of the technologies that I have experience with:</p>
                     <div class="row">
                         <div id="ul-box">
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-sm-6 col-md-6">
                                 <ul>
                                     <li>HTML</li>
                                     <li>CSS</li>
                                     <li>JavaScript</li>
                                     <li>CoffeeScript</li>
-                                    <li>Backbone.JS</li>
                                     <li>jQuery</li>
+                                    <li>Backbone.JS</li>
                                 </ul>
                             </div>
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-sm-6 col-md-6">
                                 <ul>
                                     <li>Node.JS</li>
                                     <li>MongoDB</li>
                                     <li>Gulp.JS</li>
-                                    <li>GitHub</li>
+                                    <li>Git</li>
                                     <li>Linux</li>
                                 </ul>
                             </div>
                         </div> <!-- ul-box -->
                     </div> <!-- .row -->
-                    <p class=" about-tag">&#60;&#47;About me&#62;</p> <!-- escape chars for closing brackets </> -->
+                    <p class=" about-tag"><strong>&#60;&#47;About me&#62;</strong></p> <!-- escape chars for closing brackets </> -->
                 </div> <!-- about-transbox -->
             </div> <!-- container -->
         </div>
@@ -101,44 +116,85 @@
         <!-- Projects Page  landscape slide area -->
         <div class="bg-space bg-layout section" id="s3">
             
-            <!-- slide one -->
+            <!-- 
+            ============================
+            SECTION 3 SLIDE 1 - PROJECTS
+            ============================ -->
             <div class="slide" data-anchor="slide1" id="slide-one">
                 <h2 class="projects">Projects</h2>
             </div>
             
-            <!-- slide two -->
+            <!-- 
+            ===========================================
+            SECTION 3 SLIDE 2 - BATHROOM CHORE CALENDAR
+            =========================================== -->
             <div class="slide" data-anchor="slide2" id="slide-two">
-                <div class="container ">
-                    <h1 class="projects ">Bathroom Chore Calendar (BCC)</h1>
+                <div class="container">
+                    <h1 class="project-titles">Bathroom Chore Calendar</h1>
                     <br>
-                    <hr>                    
-                    <div class="slides">
-                        <h2>The BCC app is a way to easily assign bathroom chore clean-up duties equally amongst a group of people.</h2>
-                        <h2>There are thee bathrooms that need to be cleaned every day. This app will create a monthly calendar with three names on each day that correspond to a bathroom that they're assigned to.</h2>
-                        <h2>This was built using CoffeeScript, FullCalendar and jQueryUI.</h2>
-                        <img src="" alt="Bathroom Chore Calendar image">
-                        <a href="www._.com">Demo</a>
-                        <a href="www._.com">Github</a>
+                    <div class="project-slides">
+                        <h3>This is a small, original app that demonstrates simple io functionality.</h3>
+                        <h3>It was built using Fullcalendar for the calendar parts, CoffeeScript for the main logic, jQueryUI for the drag and drop function and HTML5 local storage for saving the application state.</h3>
+                    </div>
+
+                    <!-- three links at the bottom for the bcc app -->
+                    <div class="row">
+                        <div class="col-lg-4 slide-deets slide-deets-first">
+                            <h3>Run the DEMO</h3>
+                            <a class="btn btn-lg btn-primary" href="http://davidhunter.io/bcc" role="button" target="_blank"><i class="fa fa-calendar-check-o fa-3x"></i></a>
+                        </div>
+                        <div class=" col-lg-4 slide-deets">
+                            <h3>Try it on CodepPen</h3>
+                            <a class="btn btn-lg btn-primary" href="https://github.com/DavidHunterJS/bcc" target="_blank"><i class="fa fa-codepen fa-3x"></i></a>
+                        </div>
+
+                        <div class="col-lg-4 slide-deets slide-deets-last">
+                            <h3>See it on GitHub</h3>
+                            <a class="btn btn-lg btn-primary" href="https://github.com/DavidHunterJS/bcc" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- slide thee -->
-            <div class="slide" data-anchor="s3Slide3" id="slide-three"> Slide 3
-                <br>
-                <h2>Medication Check-off Sheet</h2>
-            </div>
 
-            <!-- slide four -->
-            <div class="slide" data-anchor="Slide4" id="slide-four"> Slide 4
-                <br>
-                <h2>Time Sheet</h2>
-            </div>
+            <!-- 
+            ================================
+            SECTION 3 SLIDE 3 - THIS WEBSITE
+            ================================ -->
+            <div class="slide" data-anchor="slide3" id="slide-three">
+                <div class="container">
+                    <h1 class="project-titles">This Website</h1>
+                    <br>
+                    <div class="project-slides">
+                        <h3>
+                            This website was built using fullpage.js for the overall feel of the navigation. For styling I used Sass and Bootstrap as well as the Sass Mixin called sass-mq for some of the responsivness. 
+                        </h3>
+                        <h3>
+                            To contact me through the website, I've set up an Express.js server running emailjs. This, along with some Gmail credentials does the job of sending email messages using the form on the contact page.
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 slide-deets slide-deets-first">
+                            <h3>Run the DEMO</h3>
+                            <a class="btn btn-lg btn-primary" href="http://davidhunter.io" role="button" target="_blank"><i class="fa fa-calendar-check-o fa-3x"></i></a>
+                        </div>
+                        <div class=" col-lg-4 slide-deets">
+                            <h3>Try it on CodepPen</h3>
+                            <a class="btn btn-lg btn-primary" href="https://github.com/DavidHunterJS/bcc" target="_blank"><i class="fa fa-codepen fa-3x"></i></a>
+                        </div>
 
+                        <div class="col-lg-4 slide-deets slide-deets-last">
+                            <h3>See it on GitHub</h3>
+                            <a class="btn btn-lg btn-primary" href="https://github.com/DavidHunterJS/website-portfolio" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
-        <!-- section 4 -->
-        <!-- Contact Page -->
+        <!-- 
+        ========================
+        SECTION 4 - CONTACT PAGE
+        ======================== -->
         <div class="bg-tomales bg-layout section" id="s4">
             <div class="jumbotron jumbotron-sm contact-color">
                 <div class="container">
@@ -207,7 +263,7 @@
             </address>
             <address>
                 <strong><abbr title="Email">Email Address</abbr></strong><br>
-                <a href="mailto:#">xDavidHunter@gmail.com</a>
+                <a href="mailto:#">David@DavidHunter.io</a>
             </address>
                         </form>
                     </div>
@@ -221,3 +277,6 @@
 </body>
 
 </html>
+
+
+ -->

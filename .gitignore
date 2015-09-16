@@ -12,3 +12,6 @@ gulpfile.js
 # no need to track node modules
 /**/node_modules/**/
 
+#this showed up after I moved everything but node_modules then ran npm install
+npm-debug.log
+
