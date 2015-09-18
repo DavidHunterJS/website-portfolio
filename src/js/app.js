@@ -8,7 +8,7 @@ var express    = require('express'),
 
 // this is for cross-origin POSTs, it's a response to the OPTIONS request
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", creds.urlDev);
+  res.header("Access-Control-Allow-Origin", creds.urlDist);
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
@@ -44,6 +44,6 @@ var server  = email.server.connect({
 });
 
 // starts the express server
-app.listen(8181, function() {
-  console.log('Server running at http://127.0.0.1:8181/');
+app.listen(8182, function() {
+  console.log('Server running at http://127.0.0.1:8182/');
 });
