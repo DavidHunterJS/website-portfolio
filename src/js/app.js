@@ -27,7 +27,7 @@ app.post('/myAction', function(req, res) {
 	};
 	// creates an emailjs message using the headers object
 	var message = email.message.create(headers);
-	// sends the message using the server created below
+	// sends the message using the server created below 
 	server.send(message, function(err, message) {
 		console.log(err || message); // remove the 'or message' part after it's been verified working>>>>>>
 	});
