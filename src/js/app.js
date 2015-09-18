@@ -8,7 +8,7 @@ var express    = require('express'),
 
 // this is for cross-origin POSTs, it's a response to the OPTIONS request
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", creds.urlDist);
+  res.header("Access-Control-Allow-Origin", creds.urlDev);
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
