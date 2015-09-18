@@ -13,7 +13,7 @@ $('#theForm').submit(function(e) {
   data = $('#theForm').serialize();
   e.preventDefault();
   $.ajax({
-    url: 'http://127.0.0.1:8182/',
+    url: 'http://davidhunter.io/',
     type: 'POST',
     data: data,
     processData: false,

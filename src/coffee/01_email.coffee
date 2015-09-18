@@ -6,7 +6,7 @@ $('#theForm').submit (e) ->
   e.preventDefault() # stops the form from auto submitting so I can do stuff in the ajax below
   
   $.ajax
-    url: 'http://127.0.0.1:8182/' # the express server location
+    url: 'http://davidhunter.io/' # the express server location
     type: 'POST' # method used to add data to the server
     data: data # data is named data
     processData: false # the data will not be processed as a query string
