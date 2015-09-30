@@ -4,17 +4,28 @@ var express    = require('express'),
 	app        = express(),
 	bodyParser = require('body-parser'),
 	email      = require('emailjs'),
-	creds      = require('./creds.js').creds;
+	creds      = require('./creds.js').creds,
+	cors       = require('cors');
+
+
+
+app.use(cors({
+    origin: true,
+    credentials: false
+}));
 
 // this is for cross-origin POSTs, it's a response to the OPTIONS request
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", creds.urlDev);
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  // I'll try this
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   next();
 });
 
 // parses the body of the request
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
 
 // collects the form's input data and adds it to the headers object
 app.post('/myAction', function(req, res) {
@@ -44,6 +55,6 @@ var server  = email.server.connect({
 });
 
 // starts the express server
-app.listen(8182, function() {
-  console.log('Server running at http://127.0.0.1:8182/');
+app.listen(8585, '10.0.0.1', function() {
+  console.log('Server running at http://10.0.0.1:8585/');
 });

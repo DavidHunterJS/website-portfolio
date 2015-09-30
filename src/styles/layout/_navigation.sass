@@ -8,38 +8,40 @@
 	width: 100%
 	text-align: center
 .nav-li 
-	margin: -2px
+	margin: -2px 
 	margin-top: 0
 	display:inline-block
 	background: $color-transblue
-	+mq($until: tablet)
+	+mq($until: tablet) // sets the width and the margins on mobile 
 		width: 20%
-		margin-top: -2%
+		margin: -2%  -1.7px 0 -1.7px
+
 	&.active
 		background: $color-transblue-light
 		a
-			color: $color-white
+			color: $color-transblue-darker
 	&:hover
 		background: rgba(2,101,255, 0.35)
 		a
 			color: $color-transblue-light
-	a
+	a  // this is the GLYPHICON
 		text-decoration:none
 		padding: 1em 3em
 		display:block
 		font-size: 1.6em
-		color: $color-black
-		+mq($until: tablet)
-			font-size: 2em
-.nav-li-first
+		color: $color-white
+		+mq($until: tablet) // centers and enlarges glyphicons on mobile
+			font-size: 3em
+			padding: 1em
+.nav-li-first // these two shape the first and the last of the nav bar border
 	border-top-left-radius: 10px
 	border-bottom-left-radius: 10px
-	+mq($until: tablet)
+	+mq($until: tablet)// removes the round borders of the nav menu
 		border-top-left-radius: 0
 		border-bottom-left-radius: 0
 .nav-li-last
 	border-top-right-radius: 10px
 	border-bottom-right-radius: 10px
-	+mq($until: tablet)
+	+mq($until: tablet)// removes the round borders of the nav menu
 		border-top-right-radius: 0
 		border-bottom-right-radius: 0
