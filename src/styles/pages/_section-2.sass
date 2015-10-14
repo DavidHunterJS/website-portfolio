@@ -6,12 +6,13 @@
 	margin-top: 20%
 
 .about-text
-	color: white
-	text-shadow: 1px 1px 2px gray
-	background: $color-transblue
+	color: $color-white
+	// text-shadow: 1px 1px 2px $color-green-custom
+	background: $color-transblue-light
 	border-radius: 10px
-	font: 27px $Helvetica // I went with pixels instead of ems because it looked better on both desktop and mobile.
-
+	font: normal 27px $Helvetica // I went with pixels instead of ems because it looked better on both desktop and mobile.
+	+mq($until: desktop)
+		font: bold 28px $Helvetica // making things larger and earier to read for mobile
 .about-tag
 	text-align: center
 	letter-spacing: 10px
