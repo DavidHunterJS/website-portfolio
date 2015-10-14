@@ -14,7 +14,7 @@
 	background: $color-transblue
 	+mq($until: desktop) // sets the width and the margins on mobile 
 		width: 20%
-		margin: -2%  -1.7px 0 -1.7px
+		margin: -2%  -1.7px 0 -1.7px // sets margins on mobile for navbar
 
 	&.active
 		background: $color-transblue-light
@@ -36,12 +36,12 @@
 .nav-li-first // these two shape the first and the last of the nav bar border
 	border-top-left-radius: 10px
 	border-bottom-left-radius: 10px
-	+mq($until: tablet)// removes the round borders of the nav menu
+	+mq($until: desktop)// removes the round borders of the nav menu
 		border-top-left-radius: 0
 		border-bottom-left-radius: 0
 .nav-li-last
 	border-top-right-radius: 10px
 	border-bottom-right-radius: 10px
-	+mq($until: tablet)// removes the round borders of the nav menu
+	+mq($until: desktop)// removes the round borders of the nav menu
 		border-top-right-radius: 0
 		border-bottom-right-radius: 0
