@@ -55,6 +55,6 @@ var server  = email.server.connect({
 });
 
 // starts the express server
-app.listen(8585, '10.0.0.1', function() {
+app.listen(8585,  function() {
   console.log('Server running at http://10.0.0.1:8585/');
 });

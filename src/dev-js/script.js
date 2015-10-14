@@ -13,7 +13,7 @@ $('#theForm').submit(function(e) {
   data = $('#theForm').serialize();
   e.preventDefault();
   $.ajax({
-    url: 'http://10.0.0.1:8585/myAction',
+    url: 'http://localhost:8585/myAction',
     type: 'POST',
     data: data,
     processData: false,
